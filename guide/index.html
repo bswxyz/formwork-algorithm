@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ALGORITHM — Guide · How this was built</title>
-<meta name="description" content="How the ALGORITHM site was designed and built by Fable: a seeded flow field on a 2D canvas, a mulberry32 PRNG, and a reproducible URL — plus three generative gallery pieces." />
+<meta name="description" content="How the ALGORITHM site was designed and built by Formwork: a seeded flow field on a 2D canvas, a mulberry32 PRNG, and a reproducible URL — plus three generative gallery pieces." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
@@ -46,7 +46,7 @@
 
   <span class="tag">Build guide · Site 12 of 25</span>
   <h1>A studio that draws itself, from <em>one number</em>.</h1>
-  <p class="lede">ALGORITHM is one of 25 sites designed and built by Fable to demonstrate web design,
+  <p class="lede">ALGORITHM is one of 25 sites designed and built by Formwork to demonstrate web design,
     motion, and generative craft. Here is exactly how this one was made — a hero that repaints on every
     visit, yet stays perfectly reproducible.</p>
 
@@ -102,8 +102,8 @@
   <h2>Ship it on GitHub Pages</h2>
   <p>Every site here is static, so hosting is three commands:</p>
   <pre><code>git init -b main && git add -A && git commit -m "ship"
-gh repo create fable-algorithm --public --source=. --push
-gh api --method POST /repos/OWNER/fable-algorithm/pages \
+gh repo create formwork-algorithm --public --source=. --push
+gh api --method POST /repos/OWNER/formwork-algorithm/pages \
   -f 'source[branch]=main' -f 'source[path]=/'</code></pre>
   <p>Use <strong>relative paths</strong> (<code>./main.js</code>, not <code>/main.js</code>) because project
     Pages live under <code>/repo-name/</code>. Add an empty <code>.nojekyll</code> file so every asset serves verbatim.</p>
@@ -112,7 +112,7 @@ gh api --method POST /repos/OWNER/fable-algorithm/pages \
   <p>That's the whole recipe: one PRNG, one noise field, a canvas, and strong type. The other 24 sites each
     swap the central technique — shaders, kinetic type, 3D — but the discipline is the same.</p>
 
-  <footer>Designed &amp; built by <strong>Fable</strong> · Part of a 25-site showcase · <a href="../">Return to ALGORITHM →</a></footer>
+  <footer>Designed &amp; built by <strong>Formwork</strong> · Part of a 25-site showcase · <a href="../">Return to ALGORITHM →</a></footer>
 </div>
 </body>
 </html>
